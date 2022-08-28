@@ -1,0 +1,37 @@
+{
+    "name": "node-testing",
+    "version": "0.0.1",
+    "description": "Tests for Node application",
+    "main": "",
+    "repository": "",
+    "author": "carrbrpoa",
+    "publishConfig": {
+        "access": "restricted"
+    },
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "tsc --build",
+        "test": "jest test --detectOpenHandles",
+        "test:unit": "jest unit --detectOpenHandles",
+        "test:integration": "jest \"^(.*/)*(.*\\.)*(spec)\\.ts$\" --detectOpenHandles",
+        "start": "ts-node ./src/server.ts"
+    },
+    "dependencies": {
+        "@types/http-errors": "1.8.2",
+        "@types/node": "16.11.45",
+        "axios": "0.27.2",
+        "fastify": "3.29.1",
+        "fastify-plugin": "^3.0.1",
+        "fluent-json-schema": "3.1.0",
+        "http-errors": "2.0.0",
+        "tslib": "2.4.0"
+    },
+    "devDependencies": {
+        "@types/jest": "27.5.2",
+        "jest": "27.5.1",
+        "ts-jest": "27.1.5",
+        "ts-node": "10.9.1",
+        "ts-node-dev": "2.0.0",
+        "typescript": "4.7.4"
+    }
+}

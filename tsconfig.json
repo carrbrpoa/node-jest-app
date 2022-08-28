@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+      "baseUrl": ".",
+      "strictNullChecks": true,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "lib": ["es2020"],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "outDir": "dist",
+      "paths": {
+          "*": [
+              "node_modules/*"
+          ]
+      },
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "inlineSources": true,
+      "sourceRoot": "/",
+      "strict": true,
+      "target": "es2020",
+      "declaration": true,
+      "importHelpers": true,
+      "noEmitHelpers": true
+  },
+  "include": [
+      "src/**/*",
+      "__tests__"
+  ]
+}
